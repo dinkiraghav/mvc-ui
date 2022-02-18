@@ -1,0 +1,19 @@
+logging:
+  level:
+    ROOT: DEBUG
+    org.hibernate.sql: DEBUG
+    com.sunglowsys: DEBUG
+
+server:
+  port: 8787
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/Atithi
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL8Dialec
+
