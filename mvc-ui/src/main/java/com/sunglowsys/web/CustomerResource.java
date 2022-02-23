@@ -41,7 +41,7 @@ public class CustomerResource {
     }
 
     @PostMapping("/customers")
-    public String createCustomers(@ModelAttribute("customer") Customer customer) throws URISyntaxException {
+    public String createCustomers(@ModelAttribute Customer customer) throws URISyntaxException {
         log.debug("REST request to create Customer : {}", customer);
         if (customer.getId() == null) {
             customerService.save(customer);
