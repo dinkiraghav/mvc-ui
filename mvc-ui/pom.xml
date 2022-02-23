@@ -55,5 +55,4 @@
 		</plugins>
 		<defaultGoal>spring-boot:run</defaultGoal>
 	</build>
-
 </project>
